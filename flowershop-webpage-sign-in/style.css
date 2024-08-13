@@ -1,1 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Oleo+Script:wght@400;700&display=swap');
 
+:root {
+    --gradient1: linear-gradient(to right, #6fc3f7, #c2fdff);
+    --gradient2: linear-gradient(to right, #fb3c04, #3c55d1);
+    --gold: linear-gradient(to right,#a37409 ,#fcf9b5);
+
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a,
+button {
+  all: unset;
+  cursor: pointer;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #fdb095;
+}
+
+.main-container {
+    display: flex; /* Added this line */
+    width: 900px;
+    height: 650px;
+    position: relative;
+    background-color: #210440;
+}
+
+.image-section {
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.image-wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.image-section img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.content-container {
+    position: absolute;
+    top: 65%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+}
+
+.content-container h1 {
+    font-family: 'Oleo Script', sans-serif;
+    font-size: 32px;
+    color: white;
+    background-color: hsla(0, 0%, 100%, 0.3);
+    backdrop-filter: blur(30px);
+}
+
+.content-container span {
+    background: var(--gradient1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content-container p {
+    font-size: 20px;
+    font-family: 'Alumni Sans', sans-serif;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+.form-section {
+    width: 50%;
+    height: 100%;
+    /* position: relative; */
+}
+
+.form-wrapper {
+    height: 100%;
+    width: 100%;
+    /* position: relative; */
+}
+
+.logo-container {
+    width: 100%;
+    height: 15%;
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.logo-container img {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    padding: 0.6rem; 
+}
+.logo-container h2{
+    background:linear-gradient(to right,#a37409 4%,#fcf9b5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 50px;
+}
+.form-wrapper > h2{
+    color: hsl(242, 18%, 64%);
+    text-shadow: 0 0 10px black;
+    display: flex;
+    justify-content: left;
+    padding-left: 0.4rem;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size:22px;
+    margin-left: 0.3rem;    
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 1.6rem;
+}
+.form-group label{
+    color:white;
+    font-family: 'Alumni Sans', sans-serif;
+    letter-spacing: 2.2px;
+    font-size:18px;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+
+    
+}
+.form-group input{
+    padding-inline: 0.8rem;
+    padding-block: 0.5rem;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: sans-serif;
+    border: 2.5px solid #fcf9b5;
+    border-radius: 0.3rem;
+}
+.form-group input:focus {
+    border: 2px solid #a37409;
+  }
+  .remember-forget{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-inline: 10px;
+    
+  }
+  .remember-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: white;
+    height: 17px;
+    width: 17px;
+    border:0.5px solid #03045e;
+    border-radius: 2.5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .remember-me label{
+    cursor: pointer;
+    color: #fcf9b5;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 20px;
+
+    
+  }
+  input[type="checkbox"]::after{
+    font-weight: 900;
+    font-family: "font awesome 5 free";
+    content: "\f00c";
+    font-size: 15px;
+    display: none;
+    color:#03045e;
+  }
+  input[type="checkbox"]:hover{
+    background-color:#fcf9b5 ;
+  }
+  input[type="checkbox"]:checked{
+     background-color: whitesmoke;
+  }
+  input[type="checkbox"]:checked::after{
+    display: block;
+  }
+  .remember-forget a{
+    color:#fcf9b5;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 20px;
+  }
+  .remember-forget a:hover{
+    text-decoration: underline;
+    color:#1e97f3;
+  }
+  .login-btn{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 8px;
+    border-radius: 15px;
+    background: linear-gradient(to right,#a37409 ,#fcf9b5);
+    color:white;
+    border: none;
+    cursor: pointer;
+    margin-inline: 10px;
+    margin-bottom: 2rem;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 22px;
+  }
+  .login-btn:hover {
+    opacity: 0.9;
+  }
+  
+  .divider-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin:20px 0;
+   
+  }
+  .divider-container::before,
+  .divider-container::after{
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid whitesmoke;
+    margin: 0 10px;
+  }
+  .divider-container span{
+    padding: 0 10px;
+    font-size: 16px;
+    color:whitesmoke;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 20px;
+  }
+  .google-signin object {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .google-signin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    font-size: 20px;
+    font-family: 'Alumni Sans', sans-serif;
+    padding: 8px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+    border: 2.5px solid #fcf9b5;
+    border-radius: 0.3rem;
+    width: 85%;
+    margin-inline: 25px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .apple-signin object {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .apple-signin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    font-size: 20px;
+    font-family: 'Alumni Sans', sans-serif;
+    padding: 8px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+    border: 2.5px solid #fcf9b5;
+    border-radius: 0.3rem;
+    width: 85%;
+    margin-inline: 25px;
+  }
