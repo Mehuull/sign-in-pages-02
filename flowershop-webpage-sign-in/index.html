@@ -1,1 +1,72 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="signin2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Belinda&display=swap" rel="stylesheet">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+    <section class="main-container"> 
+        <div class="image-section">
+            <div class="image-wrapper">
+                <img src="flowerimg.jpg" alt="Flowers">
+            </div>
+            <div class="content-container">
+                <h1>Brighten someone's day <br> with the<br><span>Beauty of flowers.</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, facere architecto laudantium placeat alias itaque.</p>
+            </div>
+        </div>
+        <div class="form-section">
+            <div class="form-wrapper">
+                <a class="logo-container">
+                    <img src="logo.jpg" alt="Logo">
+                    <h2>Floral Decor</h2>
+                </a>
+                <h2>please enter your credentials here <i class="em em-point_down" aria-role="presentation" aria-label="WHITE DOWN POINTING BACKHAND INDEX"></i> </h2>
+
+                <div class="input-container">
+                    <div class="form-group">
+                        <label for="email"> Email</label>
+                        <input type="email" id="email" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="email"> Password</label>
+                        <input type="password" id="password">
+                    </div>
+                </div>
+                <div class="remember-forget">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember-me" value="remember-me">
+                        <label for="remember-me">remember-me</label> 
+                    </div>
+    
+                    <a href="#" class="forget-password" >forgot password?</a>
+                </div>
+    
+                <button class="login-btn">Log In</button>
+                <div class="divider-container">
+                     <span class="ordivider">or</span>
+                </div>
+    
+                <button class="google-signin">
+                    <object data="google.png"></object>
+                    <span>Sign in with Google</span>
+                </button>
+
+                
+                <button class="apple-signin">
+                    <object data="apple.png"></object>
+                    <span>Sign in with apple</span>
+                </button>
+    
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
